@@ -1,0 +1,130 @@
+.arrow {
+    z-index: 1000;
+    /*opacity: 0.5;*/
+    position: absolute;
+    /*margin-right: 100px;*/
+    left: 0;
+}
+.circle {
+    transform: translate(50%, -50%) rotate(0deg);
+    transform-origin: center;
+
+}
+
+.backdrop {
+    /*position: absolute;*/
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: #241953;
+}
+
+.dotted-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*opacity: 0.3;*/
+    animation: rotation 3s linear infinite;
+}
+
+   .draw-in {
+       stroke-dasharray: 1000;
+       stroke-dashoffset: 10;
+       animation: draw 5s ease-in-out alternate infinite;
+   }
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.item-to {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: ease;
+}
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+.bounce-3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradient-fade {
+    from {
+        transform: translate(10%, -10%) rotate(0deg);
+    }
+    to {
+        transform: translate(50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes gradient-fade-alt {
+    from {
+        transform: translate(-20%, 20%) rotate(0deg);
+    }
+    to {
+        transform: translate(-60%, 60%) rotate(360deg);
+    }
+}

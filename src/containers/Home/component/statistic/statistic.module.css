@@ -1,0 +1,37 @@
+.statistic{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 80px;
+}
+.statistic>div{
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    padding-left: 50px;
+    align-items: center;
+}
+.statistic>div>label{
+    font-size: 35px;
+    font-weight: 600;
+    color: #241953;
+}
+.text{
+    background: linear-gradient(to right, #241953 0% ,#43ceef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 900px){
+
+    .statistic{
+        display: table;
+        margin: 500px auto 0;
+    }
+    .statistic>div{
+        padding-left: 0;
+        margin: 0 auto;
+        width: 90%;
+        /*background-color: #ff62f2;*/
+
+    }
+}

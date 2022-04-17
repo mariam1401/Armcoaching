@@ -1,0 +1,113 @@
+.courses_container{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    margin-top: 100px;
+}
+.header{
+    /*background-color: #ff62f2;*/
+    width: 100%;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 76px;
+    line-height: 48px;
+    color: #191919;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #241953 20%, #ff62f2 40% ,#43ceef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 15px;
+}
+.courses_header{
+    /*background-color: #43ceef;*/
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 48px;
+    background: linear-gradient(to right, #241953 0% ,#43ceef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.main{
+    /*background-color: darkgray;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 65vh;
+    /*background: #ff62f2;*/
+}
+
+.image_container{
+    width: 80%;
+    /*background-color: red;*/
+    margin: 0 auto;
+    height: 65vh;
+    display: flex;
+    flex-flow: column;
+    /*justify-content: flex-end;*/
+    position: relative;
+}
+
+.hover{
+    display: none;
+}
+.text_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 10%;
+    /*height: 0%;*/
+    background: linear-gradient(to right, rgba(36, 25, 83,0.3) 0%, rgba(67, 206, 239,0.3) 100%);;
+    flex-flow: column;
+    position: absolute;
+    /*margin-top: 69px;*/
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-size: 24px;
+    /*line-height: 58px;*/
+    /*box-shadow: 1px 1px 5px  5px  rgba(255, 98, 242,0.7)  ;*/
+}
+.text_container>span{
+    color: white;
+    font-weight: 600;
+}
+.container{
+    background: #43ceef;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1400px){
+    .main{
+        height: 68vh;
+    }
+    .text_container{
+        width: 45%;
+        /*height: 30%;*/
+        font-size: 16px;
+        /*padding: 5px;*/
+    }
+}
+@media screen and (max-width: 900px){
+    .courses_container{
+        display: table;
+    }
+    .main{
+        display: table;
+    }
+    .header{
+        font-size: 50px;
+    }
+}
+

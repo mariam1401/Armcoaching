@@ -1,0 +1,83 @@
+.courses{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin-top: 40px;
+    /*padding-left: 50px;*/
+}
+.courses>label{
+    width: 80%;margin-left: 3%;
+    font-size: 120px;
+    background: linear-gradient(to right, #241953 0%, #ff62f2 20% ,#43ceef 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.images>div{
+    width: 35%;
+    margin-left: 50px;
+    /*background-color: #241953;*/
+    animation: ease-in-out;
+    animation-duration: 5s;
+    animation-name: mane;
+    position: relative;
+}
+
+.images>div:hover{
+    opacity: 0.5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+.images>div>a>img{
+    width: 100%;
+    background: #241953;
+}
+.images>a {
+    margin-left: 50px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-out;
+    background: linear-gradient(to right, rgba(36, 25, 83,0.1),rgba(67, 206, 239,0.2) ,rgba(255, 98, 242,0.7));
+}
+.images>a:hover{
+    margin-left: 50px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(36, 25, 83,0.8);
+    color: white;
+}
+@media screen and (max-width: 900px){
+
+   .courses>label{
+       width: 90%;
+       font-size: 45px;
+       margin: 0;
+   }
+    .images{
+        display: table;
+    }
+    .images>div{
+        width: 90%;
+        margin: 10px auto;
+    }
+}
